@@ -11,6 +11,6 @@ class SimpleController {
 
     @Post('/')
     HttpResponse<MyResponse> foo(Long someId) {
-
+        HttpResponse.ok(new MyResponse(payload: new PayloadFoo()))
     }
 }
